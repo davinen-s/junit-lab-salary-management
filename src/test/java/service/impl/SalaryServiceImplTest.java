@@ -32,4 +32,27 @@ public class SalaryServiceImplTest {
 		assertEquals(salaryService.calculateSalaryForDeveloper(developer), expectedSalary);
 	}
 	
+	@Test(timeout=3000)
+	public void shouldExecuteInLessThan3Seconds() {
+		SalaryService salaryService = new SalaryServiceImpl();
+		Manager manager = new Manager("John",10);
+		salaryService.calculateSalaryForManagerDefered(manager);
+	}
+	
+	//TEST BELOW should be hidden
+	
+	/*@Test(expected = OverPaidException.class)
+	public void calculateSalaryForManager_shouldThrowOverPaidExceptionWhenSalaryMoreThan500000() {
+		SalaryService salaryService = new SalaryServiceImpl();
+		Manager manager = new Manager("John",100);
+		salaryService.calculateSalaryForManager(manager);
+	}
+	
+	@Test(expected = OverPaidException.class)
+	public void calculateSalaryForDeveloper_shouldThrowOverPaidExceptionWhenSalaryMoreThan100000() {
+		SalaryService salaryService = new SalaryServiceImpl();
+		Developer developer = new Developer("John",100);
+		salaryService.calculateSalaryForDeveloper(developer);
+	}*/
+
 }
