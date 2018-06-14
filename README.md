@@ -1,1 +1,0 @@
-# junit-lab-salary-management
