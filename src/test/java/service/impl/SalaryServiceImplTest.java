@@ -1,15 +1,13 @@
 package service.impl;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import entity.Developer;
 import entity.Manager;
-import exception.OverPaidException;
 import service.SalaryService;
 
 @RunWith(JUnit4.class)
@@ -22,7 +20,6 @@ public class SalaryServiceImplTest {
 		int expectedSalary = 80000;
 		assertEquals(salaryService.calculateSalaryForManager(manager), expectedSalary);
 	}
-	
 	
 	@Test
 	public void calculateSalaryForDeveloper_shouldReturnProperSalary() {
