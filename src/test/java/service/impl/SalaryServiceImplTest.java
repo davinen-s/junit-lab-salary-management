@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import entity.Developer;
+import entity.Employee;
 import entity.Manager;
 import exception.OverPaidException;
 import service.SalaryService;
