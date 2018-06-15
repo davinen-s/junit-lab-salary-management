@@ -32,4 +32,13 @@ public class SalaryServiceImplTest {
 		assertEquals(salaryService.calculateSalaryForDeveloper(developer), expectedSalary);
 	}
 	
+	@Test
+	public void test_Manager_Basic_Salary() {
+		assertEquals(25000, Manager.BASIC_SALARY);
+	}
+	
+	@Test
+	public void test_Developer_Basic_Salary() {
+		assertEquals(10000, Developer.BASIC_SALARY);
+	}
 }

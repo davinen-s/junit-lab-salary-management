@@ -8,6 +8,8 @@ public class Manager extends Employee {
 	
 	private int salaryCoefficient = 0;
 	
+	public static int BASIC_SALARY = 25000;
+	
 	/**
 	 * Constructor
 	 * @param name Employee name

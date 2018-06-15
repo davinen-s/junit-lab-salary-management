@@ -7,7 +7,7 @@ package entity;
 public class Developer extends Employee {
 	
 	private int salaryCoefficient = 0;
-	
+	public static int BASIC_SALARY = 10000;
 	/**
 	 * Constructor
 	 * @param name Employee name
